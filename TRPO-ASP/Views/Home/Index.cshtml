@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Площадь поверхности шарового сегмента";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>square</title>
+</head>
+<body>
+    <h1>Вычисление площади поверхности шарового сегмента</h1>
+    <div>
+        <figure>
+            <img src="https://www.dpva.ru/netcat_files/Image/GuideMathematics/MathematicsForKids/SquireAndVolumeOfGeomFigure/SquireAndVolumeOfGeomFigures16.jpg" alt="Результат" />
+        </figure>
+        <form action="" method="post">
+            <input type="number" name="radius" placeholder="Радиус" value="" />
+            <input type="number" name="height" placeholder="Высота" value="" />
+            <button>Рассчитать</button>
+
+
+            <p>
+                <h1>
+                    Результат: @ViewBag.Result
+                </h1>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
+
+
