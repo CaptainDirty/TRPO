@@ -20,7 +20,7 @@ namespace TRPO_Lab4.WPF
         {
             try
             {
-                txt_Result.Text = Convert.ToString(Math_1.Formula(Convert.ToDouble(txt_Height.Text), Convert.ToDouble(txt_Radius.Text)));
+                txt_Result.Text = Convert.ToString(Math.Round(Math_1.Formula(Convert.ToDouble(txt_Height.Text), Convert.ToDouble(txt_Radius.Text)),3));
             }
             catch(FormatException)
             {

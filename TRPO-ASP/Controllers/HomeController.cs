@@ -18,7 +18,7 @@ namespace TRPO_ASP.Controllers
         }
         public ActionResult Index(string radius, string height)
         {
-            double Square = new Math_1().Formula(Convert.ToDouble(radius), Convert.ToDouble(height));
+            double Square = Math.Round(Math_1.Formula(Convert.ToDouble(radius), Convert.ToDouble(height)),3);
             ViewBag.result = Square;
             return View();
         }

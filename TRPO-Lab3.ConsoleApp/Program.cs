@@ -1,4 +1,5 @@
 ﻿using System;
+using TRPO_Lab3.Lib;
 
 namespace TRPO_Lab3.ConsoleApp
 {
@@ -19,9 +20,8 @@ namespace TRPO_Lab3.ConsoleApp
                 Console.WriteLine("Введите положительный радиус");
             }
             else
-            {
-                TRPO_Lab3.Lib.Math_1 math_1 = new TRPO_Lab3.Lib.Math_1();
-               double answer =  math_1.Formula(radius, height);
+            { 
+               double answer = Math.Round(Math_1.Formula(radius, height),3);
                 Console.WriteLine($"{answer}");
             }
             Console.ReadKey();
