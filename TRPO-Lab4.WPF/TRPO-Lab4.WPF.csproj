@@ -13,6 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TRPO-Lab3.Lib\TRPO-Lab3.Lib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Icon_calc.png" />
     <Resource Include="Picture.jpeg" />
   </ItemGroup>

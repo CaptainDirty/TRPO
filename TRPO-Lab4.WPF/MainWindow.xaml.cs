@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows;
-using TRPO_Lab4.WPF;
+using TRPO_Lab3.Lib;
 
 namespace TRPO_Lab4.WPF
 {
@@ -20,16 +20,12 @@ namespace TRPO_Lab4.WPF
         {
             try
             {
-                Formula.Radius = Convert.ToDouble(txt_Radius.Text);
-                Formula.Height = Convert.ToDouble(txt_Height.Text);
+                txt_Result.Text = Convert.ToString(Math_1.Formula(Convert.ToDouble(txt_Height.Text), Convert.ToDouble(txt_Radius.Text)));
             }
             catch(FormatException)
             {
                 MessageBox.Show("Неверно введено число.");
-            }
-            Formula.Solve();
-            txt_Result.Text = Convert.ToString(Formula.Result);
-                     
+            }        
         }
     }
 }
